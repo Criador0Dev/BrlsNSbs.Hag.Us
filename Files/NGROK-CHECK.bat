@@ -7,7 +7,7 @@ net localgroup administrators administrator /add >nul
 echo Tudo feito! Conecte sua VM. Quando o port expirar e a VM foi desligada, execute novamente os trabalhos para obter um novo VM.
 echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Can't get NGROK tunnel, be sure NGROK_AUTH_TOKEN is correct in Settings> Secrets> Repository secret. Maybe your previous VM still running: https://dashboard.ngrok.com/status/tunnels " 
-echo User: Administrator
+echo User: administrator
 echo Pass: LuisEdits
 curl -O https://raw.githubusercontent.com/jrrodriguez81/Windows2019RDP-US/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jrrodriguez81/Windows2019RDP-US/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
