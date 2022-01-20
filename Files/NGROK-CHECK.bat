@@ -12,6 +12,9 @@ curl -O https://raw.githubusercontent.com/jrrodriguez81/Windows2019RDP-US/main/F
 curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jrrodriguez81/Windows2019RDP-US/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
 del /f "C:\Users\Public\Desktop\Fast Config VPS.exe" > out.txt 2>&1
 del /f "C:\Users\Public\Desktop\Unity Hub.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Microsoft Edge.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Firefox.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
 del /f "C:\Users\Public\Desktop\Google Cloud SDK Shell.lnk" > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
