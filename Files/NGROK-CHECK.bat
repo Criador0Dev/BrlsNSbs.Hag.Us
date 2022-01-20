@@ -1,7 +1,6 @@
 @echo off
-net config server /srvcomment:"Windows Azure VM" > out.txt 2>&1
+net config server /srvcomment:"Windows VM" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v Wallpaper /t REG_SZ /d D:\a\wallpaper.bat
 net user administrator @LuisEdits2022 /add >nul
 net localgroup administrators administrator /add >nul
 echo Tudo feito! Acesso Autorizado!.
